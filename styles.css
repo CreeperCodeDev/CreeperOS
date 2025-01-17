@@ -1,0 +1,57 @@
+/* 特性區域樣式 */
+.features {
+    margin-top: 3em;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    max-width: 800px;
+    text-align: left;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #ff0;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+}
+
+.features .highlight {
+    color: #0f0;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.features li {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    position: relative;
+    padding-left: 2em;
+}
+
+.features li::before {
+    content: "✨";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+    color: #0f0;
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
