@@ -5,6 +5,7 @@ body, html {
     font-family: 'Arial', sans-serif;
     height: 100%;
     overflow: hidden;
+    color: #fff;
 }
 
 /* 背景動畫 */
@@ -39,19 +40,22 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100%;
-    color: #fff;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
+/* 標題 */
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0.5em 0;
+    color: #fff;
 }
 
+/* 描述文字 */
 p {
     font-size: 1.2em;
     margin-bottom: 2em;
+    color: #fff;
 }
 
 /* 按鈕樣式 */
@@ -75,7 +79,7 @@ p {
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
 }
 
-/* 特性區域樣式 */
+/* 特性區域 */
 .features {
     margin-top: 3em;
     padding: 2em;
@@ -85,6 +89,18 @@ p {
     color: #fff;
     max-width: 800px;
     text-align: left;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .features h2 {
