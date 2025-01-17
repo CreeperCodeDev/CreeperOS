@@ -33,7 +33,7 @@ body, html {
     }
 }
 
-/* 內容區域 */
+/* 內容區 */
 .content {
     display: flex;
     flex-direction: column;
@@ -42,20 +42,23 @@ body, html {
     height: 100%;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
 }
 
-/* 標題 */
-h1 {
+/* 網站標題 */
+.site-title {
     font-size: 3.5em;
     margin: 0.5em 0;
     color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 /* 描述文字 */
-p {
-    font-size: 1.2em;
+.site-description {
+    font-size: 1.5em;
     margin-bottom: 2em;
     color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /* 按鈕樣式 */
@@ -86,7 +89,6 @@ p {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    color: #fff;
     max-width: 800px;
     text-align: left;
     animation: slideIn 1s ease-out;
